@@ -121,14 +121,6 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
   m_PrefabInternal: {fileID: 1164211800}
---- !u!1 &661856112 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100058, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
-  m_PrefabInternal: {fileID: 1164211800}
---- !u!1 &918710498 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100060, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
-  m_PrefabInternal: {fileID: 1164211800}
 --- !u!1 &986494581
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +344,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1253314884
@@ -429,13 +422,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1253314884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.35355338, y: 0.35355338, z: -0.1464466, w: 0.8535535}
+  m_LocalPosition: {x: -4, y: 8, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
 --- !u!1 &1374349678 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100050, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
@@ -451,16 +444,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93979ae4cea09047aeda948c68315eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseConnector: {fileID: 485365562}
-  UpperArm: {fileID: 1833461295}
-  LowerArm: {fileID: 224835700}
-  WristRotate: {fileID: 918710498}
-  WristHinge: {fileID: 661856112}
-  Grabber: {fileID: 1613422105}
---- !u!1 &1613422105 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100046, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
-  m_PrefabInternal: {fileID: 1164211800}
+  baseConnector: {fileID: 485365562}
+  upperArm: {fileID: 1833461295}
+  lowerArm: {fileID: 224835700}
+  wristRotate: {fileID: 0}
+  wristHinge: {fileID: 0}
+  grabber: {fileID: 0}
 --- !u!1 &1833461295 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100056, guid: 24715ab9b1700b944bee9357bcbf103d, type: 3}
