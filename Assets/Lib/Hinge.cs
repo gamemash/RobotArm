@@ -1,5 +1,4 @@
 ﻿using System;
-using NUnit.Framework;
 using UnityEngine;
 
 namespace Lib
@@ -29,7 +28,7 @@ namespace Lib
             if (rangeLimited) {
                 deg = degree;
                 if (!withinRange(degree, range.start, range.length)) {
-                    Debug.Log("Degree is out of range!");
+                    Debug.Log(String.Format("Degree is out of range! {0}, range: {1}:{2}", degree, range.start, range.length));
                     // Find closest to the point you can get.
                     if (Math.Abs(degree - range.start) > Math.Abs(degree - range.length)) {
                         deg = range.length;
@@ -59,9 +58,9 @@ namespace Lib
         private bool withinRange(float val, float min, float max)
         {
             if (min > max)
-                return val > min && val < max + 360;
+                return val >= min || val <= max;
             else
-                return val > min && val < max;
+                return val >= min && val <= max;
         }
 
         private float clamp(float val, float min, float max)

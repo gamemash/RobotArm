@@ -40,9 +40,9 @@ public class RobotArm : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		MoveHinge(Hinges.Base, 180);
-		MoveHinge(Hinges.UpperArm, 180);
-		MoveHinge(Hinges.LowerArm, 50);
+		// MoveHinge(Hinges.Base, 180);
+		// ./MoveHinge(Hinges.UpperArm, 180);
+		// ./MoveHinge(Hinges.LowerArm, 50);
 	}
 
 	public void MoveHinge(Hinges hinge, float degree)
